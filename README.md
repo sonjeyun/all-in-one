@@ -347,6 +347,12 @@ curl localhost:8080          # 커스텀 페이지 응답 확인
 <h1>Hello Docker!</h1>
 <p>jeyun의 커스텀 NGINX 이미지입니다.</p>
 ```
+## 🛠 트러블슈팅 
+| 문제 | 원인 | 해결 |
+|------|------|------|
+| `docker-compose: command not found` | v1 미설치 (v2만 설치됨) | `docker compose`(공백)로 실행 |
+| `permission denied ...docker.sock` | 데몬 소켓 권한 부족 | 명령 앞에 **`sudo`** 추가 |
+| `port is already allocated (8080)` | 기존 컨테이너가 8080 점유 | `sudo docker stop/rm`으로 정리 후 재실행 |
 
 ### 💡 배운 점
 - `docker run -p 8080:80 ...` 같은 **긴 명령**이
