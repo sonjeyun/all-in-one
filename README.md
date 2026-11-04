@@ -156,8 +156,16 @@ docker stats     # 컨테이너가 쓰는 자원(CPU/메모리) 실시간 확인
 
 ### 5-2. ubuntu 컨테이너 진입 + 명령
 ```bash
+
+docker run	컨테이너 실행
+-it	내가 직접 키보드로 조작할 수 있게 연결
+ubuntu	우분투 리눅스 이미지 사용
+bash	컨테이너 안으로 들어가서 명령 입력 모드
+"쉽게 말하면 컨테이너라는 작은 리눅스 방 안으로 직접 들어가는 것이에요."
+
+
 [docker run -it ubuntu bash 진입]
-[ls, echo 실행 출력]
+[ls, echo (글자 출)실행 출력]  
 ```
 
 <img width="1445" height="562" alt="image" src="https://github.com/user-attachments/assets/5d441f88-8941-4b72-ad60-25ed34838724" />
