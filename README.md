@@ -125,13 +125,10 @@ project-root/
 
 
 ```bash
-# 이미지 목록
-[docker images 출력]
-# 컨테이너 목록
-[docker ps 출력]
-[docker ps -a 출력]
-# 리소스
-[docker stats 출력]
+docker images    # 내가 가진 이미지(틀) 목록
+docker ps        # 지금 돌아가는 컨테이너 목록
+docker ps -a     # 멈춘 것까지 전부 (-a = all)
+docker stats     # 컨테이너가 쓰는 자원(CPU/메모리) 실시간 확인
 ```
 
 
